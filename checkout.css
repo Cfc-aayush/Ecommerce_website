@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.heading {
+  text-align: center;
+  margin: 15px;
+}
+
+.background {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.left-part {
+  width: 50%;
+  padding: 20px;
+  min-height: 500px;
+  background: whitesmoke;
+  border-radius: 30px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-part h3 {
+  text-align: center;
+  font-size: 28px;
+  margin: 15px;
+}
+
+.left-part h5 {
+  margin: 15px;
+}
+
+.right-part {
+  width: 50%;
+  padding: 20px;
+  min-height: 500px;
+  background: whitesmoke;
+  border-radius: 30px;
+  margin: 5px;
+}
+
+.time-slot {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.timeslot-bubble {
+  width: 100%;
+  background: #8f9ffc;
+  padding: 16px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.timeslot-bubble :hover {
+  background: #172052;
+}
+
+.right-part img {
+  max-width: 200px;
+  margin: 0;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkout-button {
+  max-width: 200px;
+  padding: 15px 30px;
+  border-radius: 20px;
+  background: rgb(78, 30, 126);
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.checkout-button p {
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+.category-row {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.category-block {
+  margin: 30px;
+}
+
+.category-block h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.each-product {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.each-product h5 {
+  margin-top: 15px;
+}
+
+.each-product img {
+  max-width: 180px;
+  border-radius: 50%;
+}

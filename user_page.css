@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: left;
+  padding: 50px;
+  background: whitesmoke;
+  border-radius: 30px;
+}
+
+.profile-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  margin-top: 40px; /* Add margin to move down by one step */
+}
+
+.profile-info input[type="text"],
+.profile-info input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+.profile-info input[readonly] {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.edit-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}

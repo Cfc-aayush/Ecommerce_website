@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#mainHeader .main-nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  justify-content: space-between;
+  background-color: var(--blue-two);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+#mainHeader .main-nav a {
+  text-decoration: none;
+  color: #262626;
+}
+
+#mainHeader .logo {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#mainHeader .logo img {
+  width: 150px; /* Adjust width as needed */
+}
+
+#mainHeader .search-box {
+  justify-content: center;
+  display: flex;
+  border: 2px solid #262626;
+  color: white;
+  line-height: 40px;
+  border-radius: 25px;
+  padding: 0px 20px 0px 10px;
+  width: 500px;
+}
+
+#mainHeader .search-txt {
+  outline: none;
+  border-radius: 25px;
+  border: none;
+  width: 480px;
+  font-size: 16px;
+  padding: 5px 15px 5px 5px;
+}
+
+#mainHeader .user, #mainHeader .user-detail {
+  display: flex;
+}
+
+#mainHeader .user-detail p {
+  position: relative;
+  margin: -3px;
+  font-size: 24px;
+  top: -3px;
+
+}
+
+#mainHeader .user i {
+  margin-right: 20px;
+  font-size: 24px;
+}
+/* media query*/
+
+@media screen and (max-width: 768px) {
+  #mainHeader .main-nav {
+    padding: 15px 10px;
+    justify-content: space-between;
+  }
+
+  #mainHeader .logo {
+    font-size: 20px;
+  }
+
+  #mainHeader .search-txt {
+    width: 200px;
+    font-size: 12px;
+  }
+
+  #mainHeader .user-detail p {
+    font-size: 16px;
+  }
+
+  #mainHeader .user i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #mainHeader .main-nav {
+    padding: 10px;
+    justify-content: space-around;
+  }
+
+  #mainHeader .search-box {
+    flex: 1;
+    max-width: 200px;
+  }
+
+  #mainHeader .search-txt {
+    width: 140px;
+  }
+
+  #mainHeader .user-detail p {
+    font-size: 0px;
+  }
+
+  #mainHeader .user i {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+}

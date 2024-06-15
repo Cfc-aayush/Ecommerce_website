@@ -1,0 +1,180 @@
+/* Style the navigation bar */
+.navbar {
+  position: relative;
+  background-color: #fff; /* White background color */
+  display: flex; /* Arrange elements horizontally */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Align vertically in center */
+  padding: 0 3rem; /* Increase left and right padding for more gap */
+
+}
+
+
+/* Style the navigation links */
+.navbar-nav {
+  display: flex;
+  list-style: none; /* Remove default list styling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.nav-item {
+  text-align: center; /* Center text within each item */
+  margin: 0 2rem; /* Add space between items (adjust as needed) */
+}
+
+.nav-link {
+  color: #000; /* Black text color */
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease; /* Add hover effect */
+}
+
+.nav-link:hover {
+  color: #ddd; /* Light gray on hover */
+}
+
+/* Style for text box */
+.text-box {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding:0px 20px; /* Adjust padding */
+  margin-bottom: 10px; /* Add margin to separate from other content */
+  width: fit-content; /* Set width to fit content */
+}
+
+.text {
+  font-size: 14px; /* Adjust font size */
+  color: #333;
+  font-weight: bold;
+}
+
+
+/* Style the line */
+.line {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  top:5px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.text{
+  font-size: 24px; /* Adjust the font size */
+  color: #333; /* Adjust the text color */
+  font-weight: bold; /* Make the text bold */
+  margin-top: 20px; 
+}
+
+.body {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: flex-start; /* Align items to the top */
+  height: 100vh; /* Set the height of the body to the viewport height */
+  margin: 0; /* Remove default body margin */
+  padding: 20px; /* Add padding to create space on left and right */
+}
+
+.display {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: center; /* Center content horizontally */
+  margin: 0 auto; /* Center the grid container itself */
+}
+
+.container {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.request-type,
+.trader-name,
+.shop-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.product-list {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem; /* Add padding */
+  background-color: #f0f0f0; /* Add background color */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius for square shape */
+}
+
+.shop-checkbox {
+  margin-right: 0.5rem; /* Add space between checkbox and label */
+}
+
+.product-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem; /* Adjusted margin */
+}
+
+.product-name {
+  margin-bottom: 0.3rem; /* Reduced margin */
+}
+.product-image {
+  margin-left: auto; /* Push the image and price to the right */
+}
+
+.product-image img {
+  max-width: 100px; /* Set maximum width for the product image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.product-price {
+  margin-left: 10px; /* Add space between the image and price */
+  font-weight: bold;
+}
+
+
+.actions {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  margin-top: 1rem; /* Add space after product list */
+}
+
+.accept,
+.reject {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem; /* Add space between buttons (except first) */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.accept:hover,
+.reject:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* Media query for mobile view */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%; /* Adjusted width for smaller screens */
+  }
+}
+
+

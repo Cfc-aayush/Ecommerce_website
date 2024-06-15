@@ -1,0 +1,25 @@
+/* Styles for slider */
+.slider {
+  height: 400px; /* Adjust as needed */
+}
+.container-categories {
+  display: block;
+  margin: auto;
+}
+/* Styles for product categories */
+.category-card {
+  border: none;
+  transition: transform 0.3s;
+}
+.category-card:hover {
+  transform: scale(1.05);
+}
+.category-card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Styles for product section */
+.product-section {
+  margin: 40px 0;
+}
